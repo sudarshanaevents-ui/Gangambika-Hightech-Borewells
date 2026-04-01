@@ -1,0 +1,221 @@
+/* GLOBAL */
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9; /* softer premium background */
+    transition:0.3s;
+    }
+    
+    /* ================= HEADER ================= */
+    
+    header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    background:#0b2c3d; /* 🔥 premium dark blue */
+    padding:10px 15px;
+    z-index:1000;
+    }
+    
+    /* TITLE */
+    
+    .logo h2{
+    color:#ffffff;
+    }
+    
+    /* ================= NAV ================= */
+    
+    nav{
+    display:flex;
+    gap:15px;
+    }
+    
+    nav a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+    }
+    
+    nav a:hover{
+    color:#d4a017; /* 🔥 gold hover */
+    }
+    
+    /* ================= MOBILE NAV ================= */
+    
+    @media(max-width:768px){
+    
+    nav{
+    background:#0b2c3d;
+    }
+    
+    }
+    
+    /* ================= HERO ================= */
+    
+    .hero::before{
+    background:rgba(11,44,61,0.75); /* dark blue overlay */
+    }
+    
+    /* TEXT */
+    
+    .hero h1{
+    color:#ffffff;
+    }
+    
+    .hero h2{
+    color:#d4a017; /* 🔥 gold highlight */
+    }
+    
+    /* BUTTONS */
+    
+    .btn{
+    display:inline-block;
+    padding:12px 20px;
+    margin:10px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+    }
+    
+    /* CALL BUTTON */
+    
+    .call{
+    background:#d4a017; /* gold */
+    color:#000;
+    }
+    
+    .call:hover{
+    background:#b8960f;
+    }
+    
+    /* WHATSAPP */
+    
+    .whatsapp{
+    background:#25D366;
+    }
+    
+    .whatsapp:hover{
+    background:#1ebe5d;
+    }
+    
+    /* ================= SECTIONS ================= */
+    
+    section{
+    padding:60px 20px;
+    text-align:center;
+    }
+    
+    /* SECTION TITLES */
+    
+    h2{
+    color:#0b2c3d;
+    margin-bottom:20px;
+    }
+    
+    /* ================= CARDS ================= */
+    
+    .card{
+    background:white;
+    padding:25px;
+    width:220px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    border-top:4px solid #d4a017; /* 🔥 gold accent */
+    transition:0.3s;
+    }
+    
+    .card:hover{
+    transform:translateY(-5px);
+    }
+    
+    /* ================= WHY ================= */
+    
+    .why-card{
+    background:white;
+    padding:20px;
+    width:220px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    border-left:4px solid #d4a017;
+    }
+    
+    /* ================= GALLERY ================= */
+    
+    .slider img{
+    height:250px;
+    border-radius:10px;
+    border:3px solid #fff;
+    }
+    
+    /* ================= REVIEWS ================= */
+    
+    .review{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    border-bottom:4px solid #d4a017;
+    }
+    
+    /* ================= AREAS ================= */
+    
+    #areas{
+    background:#eef3f7; /* premium light blue-grey */
+    }
+    
+    /* ================= CONTACT ================= */
+    
+    form button{
+    background:#0b2c3d;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    }
+    
+    form button:hover{
+    background:#092331;
+    }
+    
+    /* ================= FOOTER ================= */
+    
+    footer{
+    background:#0b2c3d;
+    color:white;
+    padding:20px;
+    }
+    
+    /* ================= FLOAT BUTTONS ================= */
+    
+    .float-call{
+    position:fixed;
+    bottom:80px;
+    right:20px;
+    background:#d4a017; /* gold */
+    color:black;
+    padding:15px;
+    border-radius:50%;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .float-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
