@@ -241,6 +241,19 @@ body{
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
     border-bottom:4px solid #d4a017;
     }
+    .review h4{
+        margin:10px 0 5px;
+        color:#0b2c3d;
+        }
+        
+        .review small{
+        color:#777;
+        font-size:13px;
+        }
+        
+        .review{
+        text-align:left;
+        }
     
     /* ================= GALLERY ================= */
     .slider{
