@@ -168,18 +168,61 @@ body{
     gap:20px;
     }
     
+    /* CARD BASE */
     .card{
     background:white;
     padding:25px;
-    width:220px;
+    width:240px;
     border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,0.08);
     border-top:4px solid #d4a017;
+    text-align:center;
     transition:0.3s;
     }
     
+    /* ICON */
+    .card i{
+    font-size:30px;
+    color:#d4a017;
+    margin-bottom:10px;
+    }
+    
+    /* BUTTONS INSIDE CARD */
+    .card-btn{
+    display:block;
+    margin:8px auto;
+    padding:10px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    width:85%;
+    text-align:center;
+    }
+    
+    /* CALL BUTTON */
+    .card-btn.call{
+    background:#d4a017;
+    color:black;
+    }
+    
+    .card-btn.call:hover{
+    background:#b8960f;
+    }
+    
+    /* WHATSAPP BUTTON */
+    .card-btn.whatsapp{
+    background:#25D366;
+    color:white;
+    }
+    
+    .card-btn.whatsapp:hover{
+    background:#1ebe5d;
+    }
+    
+    /* HOVER EFFECT */
     .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
     }
     
     /* ================= REVIEWS ================= */
@@ -275,7 +318,7 @@ body{
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
     }
     
-    /* ================= STICKY BOTTOM CTA ================= */
+    /* ================= STICKY CTA ================= */
     .sticky-buttons{
     position:fixed;
     bottom:0;
@@ -339,6 +382,10 @@ body{
     
     .hero{
     margin-top:110px;
+    }
+    
+    .card{
+    width:90%;
     }
     
     }
