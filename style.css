@@ -226,34 +226,96 @@ body{
     }
     
     /* ================= REVIEWS ================= */
-    .reviews{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    /* ================= REVIEW SECTION ================= */
+
+/* SLIDER CONTAINER */
+.review-slider{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    padding:20px 0;
     }
     
+    /* TRACK (MOVING PART) */
+    .review-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scrollReviews 25s linear infinite;
+    }
+    
+    /* INDIVIDUAL REVIEW CARD */
     .review{
+    min-width:260px;
+    max-width:260px;
     background:white;
     padding:20px;
-    width:250px;
     border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
     border-bottom:4px solid #d4a017;
+    text-align:left;
+    transition:0.3s;
     }
+    
+    /* HOVER EFFECT */
+    .review:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    /* REVIEW NAME */
     .review h4{
-        margin:10px 0 5px;
-        color:#0b2c3d;
-        }
-        
-        .review small{
-        color:#777;
-        font-size:13px;
-        }
-        
-        .review{
-        text-align:left;
-        }
+    margin:10px 0 5px;
+    color:#0b2c3d;
+    font-size:16px;
+    }
+    
+    /* REVIEW TEXT */
+    .review p{
+    font-size:14px;
+    color:#333;
+    line-height:1.5;
+    }
+    
+    /* LOCATION TEXT */
+    .review small{
+    color:#777;
+    font-size:13px;
+    }
+    
+    /* AUTO SCROLL ANIMATION */
+    @keyframes scrollReviews{
+    0%{
+    transform:translateX(0);
+    }
+    100%{
+    transform:translateX(-50%);
+    }
+    }
+    
+    /* PAUSE ON HOVER (VERY IMPORTANT UX) */
+    .review-slider:hover .review-track{
+    animation-play-state:paused;
+    }
+    
+    /* ================= MOBILE OPTIMIZATION ================= */
+    @media(max-width:768px){
+    
+    .review{
+    min-width:220px;
+    max-width:220px;
+    padding:15px;
+    }
+    
+    .review h4{
+    font-size:14px;
+    }
+    
+    .review p{
+    font-size:13px;
+    }
+    
+    }
     
     /* ================= GALLERY ================= */
     .slider{
@@ -297,6 +359,38 @@ body{
     }
     
     form button:hover{
+    background:#092331;
+    }
+
+    /* ================= MAP SECTION ================= */
+#map{
+    text-align:center;
+    padding:60px 20px;
+    background:#eef3f7;
+    }
+    
+    /* MAP BOX */
+    .map-container{
+    max-width:900px;
+    margin:auto;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* BUTTON */
+    .direction-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#0b2c3d;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    }
+    
+    .direction-btn:hover{
     background:#092331;
     }
     
